@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.3">
+  <diagram name="Page-1" id="0kU-9hBIHeohd03Ha4We">
+    <mxGraphModel dx="1434" dy="996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-16" value="Deployment diagram" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;fillColor=#eeeeee;strokeColor=#36393d;strokeWidth=2;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="120" y="210" width="560" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-2" value="Queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;horizontal=0;fontStyle=1" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1">
+          <mxGeometry x="440" y="31.25" width="40" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-13" value="Presentation" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1">
+          <mxGeometry x="40" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-11" value="Application Services" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1">
+          <mxGeometry x="220" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="lUdtwEhFdtQp0Rw-kaZU-16" source="lUdtwEhFdtQp0Rw-kaZU-13" target="lUdtwEhFdtQp0Rw-kaZU-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-5" value="Processing" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1">
+          <mxGeometry x="220" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="lUdtwEhFdtQp0Rw-kaZU-16" source="lUdtwEhFdtQp0Rw-kaZU-2" target="lUdtwEhFdtQp0Rw-kaZU-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-7" value="Real-time &amp;amp; Historical Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1">
+          <mxGeometry x="420" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="lUdtwEhFdtQp0Rw-kaZU-16" source="lUdtwEhFdtQp0Rw-kaZU-5" target="lUdtwEhFdtQp0Rw-kaZU-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="lUdtwEhFdtQp0Rw-kaZU-16" source="lUdtwEhFdtQp0Rw-kaZU-11" target="lUdtwEhFdtQp0Rw-kaZU-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="lUdtwEhFdtQp0Rw-kaZU-16" source="lUdtwEhFdtQp0Rw-kaZU-3" target="lUdtwEhFdtQp0Rw-kaZU-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="" style="group;fontStyle=1;align=right;labelPosition=left;verticalLabelPosition=top;verticalAlign=bottom;" parent="lUdtwEhFdtQp0Rw-kaZU-16" vertex="1" connectable="0">
+          <mxGeometry x="40" y="60" width="320" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Kubernetes cluster&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;fontStyle=1;labelPosition=center;verticalLabelPosition=middle;align=right;verticalAlign=top;strokeColor=#004C99;" parent="2" vertex="1">
+          <mxGeometry x="-20" y="-20" width="340" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="fS7vxKkTUC3ZjWZczDmI-2" value="Data Ingestion" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="2" vertex="1">
+          <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fS7vxKkTUC3ZjWZczDmI-1" value="Data Ingestion" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="2" vertex="1">
+          <mxGeometry x="10" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lUdtwEhFdtQp0Rw-kaZU-3" value="Data Ingestion" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="2" vertex="1">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;Cloud infrastructure&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;align=center;strokeColor=#990000;" parent="1" vertex="1">
+          <mxGeometry x="500" y="250" width="160" height="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

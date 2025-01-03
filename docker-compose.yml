@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0.20
+    container_name: mosquitto
+    ports:
+      - "1883:1883" # MQTT port
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:9.5.21
+    container_name: grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin  # Default admin password (change it for production)
+      - GF_INSTALL_PLUGINS=grafana-mqtt-datasource  # Automatically install the MQTT plugin
+    ports:
+      - "3000:3000"  # Grafana UI
+    volumes:
+      - grafana_data:/var/lib/grafana  # Persistent data for Grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning  # For provisioning datasources
+    depends_on:
+      - mosquitto
+    restart: unless-stopped
+
+  substation-server:
+    build:
+      context: ./substation-server
+      dockerfile: Dockerfile
+    container_name: substation-server
+    ports:
+      - "4000:4000"
+
+  substation-client:
+    build:
+      context: ./substation-client
+      dockerfile: Dockerfile
+    container_name: substation-client
+    depends_on:
+      - mosquitto
+      - substation-server
+
+volumes:
+  grafana_data:
