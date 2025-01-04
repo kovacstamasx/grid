@@ -15,3 +15,4 @@ docker-compose up
 
 2. Open Grafana at http://localhost:3000/. Username/password: admin/admin
 3. Open dashboard called _Substation_
+![grafana.png](docs/grafana.png)
